@@ -13,7 +13,6 @@
 }
 
 .navbar {
-  background: var(--header-bg);
   backdrop-filter: var(--header-backdrop-filter);
   -webkit-backdrop-filter: var(--header-backdrop-filter);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -64,7 +63,7 @@
 
 .navbar-nav .nav-link:hover {
   color: var(--primary-color);
-  background: rgba(99, 102, 241, 0.1);
+  background: rgba(33, 37, 243, 0.1);
 }
 
 .navbar-nav .nav-link.active {
@@ -113,7 +112,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  background: linear-gradient(135deg, #143b96 0%, #051225 50%, #053374 100%);
   z-index: 1;
 }
 
@@ -297,7 +296,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   animation-delay: 3.2s;
-  color: #7952b3;
+  color: #2473b4;
 }
 
 @keyframes floatElement {
@@ -474,6 +473,10 @@
 /* === SEÇÃO SERVIÇOS === */
 .services-section {
   background: var(--white);
+}
+
+.services-section .title-services{
+  color: var(--gray-900);
 }
 
 .service-card {
@@ -805,6 +808,11 @@
 /* === SEÇÃO DEPOIMENTOS === */
 .testimonials-section {
   background: var(--white);
+}
+
+.testimonials-section .title-testimonals {
+  color: var(--gray-900);
+
 }
 
 .testimonials-carousel {

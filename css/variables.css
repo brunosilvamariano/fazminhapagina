@@ -4,10 +4,10 @@
 
 :root {
   /* === CORES PRIMÁRIAS === */
-  --primary-color: #6366f1;           /* Indigo moderno */
-  --primary-dark: #4f46e5;            /* Indigo escuro */
-  --primary-light: #818cf8;           /* Indigo claro */
-  --primary-gradient: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  --primary-color: #398cf7;           /* Indigo moderno */
+  --primary-dark: #58a5f9;            /* Indigo escuro */
+  --primary-light: #77bdfb;           /* Indigo claro */
+  --primary-gradient: linear-gradient(135deg, #398cf7 0%, #77bdfb 100%);
   
   /* === CORES SECUNDÁRIAS === */
   --secondary-color: #f59e0b;         /* Âmbar */
@@ -33,7 +33,7 @@
   --bg-secondary: #f8fafc;
   --bg-dark: #0f172a;
   --bg-darker: #020617;
-  --bg-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --bg-gradient: linear-gradient(135deg, #667eea 0%, #398cf7 100%);
   
   /* === CORES DE TEXTO === */
   --text-primary: #1e293b;
