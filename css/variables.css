@@ -33,14 +33,14 @@
   --bg-secondary: #f8fafc;
   --bg-dark: #0f172a;
   --bg-darker: #020617;
-  --bg-gradient: linear-gradient(135deg, #667eea 0%, #398cf7 100%);
+  --bg-gradient: linear-gradient(135deg, #11a9e6 0%, #398cf7 100%);
   
   /* === CORES DE TEXTO === */
   --text-primary: #1e293b;
   --text-secondary: #64748b;
   --text-muted: #94a3b8;
   --text-light: #ffffff;
-  --text-dark: #0f172a;
+  --text-dark: #3c77a7;
   
   /* === CORES DE STATUS === */
   --success-color: #10b981;
