@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Meta tags essenciais -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BM Developer - Especialista em criação de sites institucionais e landing pages modernas, responsivas e de alta conversão">
+    <meta name="keywords" content="desenvolvedor web, sites institucionais, landing pages, design responsivo, alta conversão">
+    <meta name="author" content="BM Developer">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="BM Developer - Sites Institucionais & Landing Pages">
+    <meta property="og:description" content="Especialista em criação de sites institucionais e landing pages modernas, responsivas e de alta conversão">
+    <meta property="og:image" content="">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="BM Developer - Sites Institucionais & Landing Pages">
+    <meta property="twitter:description" content="Especialista em criação de sites institucionais e landing pages modernas, responsivas e de alta conversão">
+    <meta property="twitter:image" content="">
+    
+    <title>BM Developer - Sites Institucionais & Landing Pages</title>
+    
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+    <!-- Header / Navegação -->
+    <header class="header-main" id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="#home">
+                    <span class="logo-text">BM</span>
+                    <span class="logo-subtitle">Developer</span>
+                </a>
+                
+                <!-- Botão do menu mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Menu de navegação -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfólio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">Depoimentos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-contact" href="#contact">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Seção Hero -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <span class="hero-greeting">Olá, eu sou</span>
+                        <h1 class="hero-title">
+                            <span class="hero-name">BM Developer</span>
+                            <span class="hero-profession">Especialista em Sites Institucionais</span>
+                        </h1>
+                        <p class="hero-description">
+                            Crio sites institucionais e landing pages modernas, responsivas e otimizadas para alta conversão. 
+                            Transformo ideias em experiências digitais que geram resultados reais para o seu negócio.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#portfolio" class="btn btn-primary btn-hero">Ver Portfólio</a>
+                            <a href="#contact" class="btn btn-outline-light btn-hero">Falar Comigo</a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Projetos Entregues</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Clientes Satisfeitos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Anos de Experiência</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-visual">
+                        <div class="hero-image-container">
+                            <div class="hero-floating-elements">
+                                <div class="floating-element element-1">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <div class="floating-element element-2">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <div class="floating-element element-3">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <div class="floating-element element-4">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <div class="floating-element element-5">
+                                    <i class="fab fa-bootstrap"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about" class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-header text-center">
+                        <span class="section-subtitle">Conheça mais</span>
+                        <h2 class="section-title">Sobre Mim</h2>
+                        <p class="section-description">
+                            Desenvolvedor especializado em criar experiências digitais que convertem visitantes em clientes
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h3 class="about-title">Transformando ideias em soluções digitais de alta performance</h3>
+                        <p class="about-text">
+                            Com mais de 3 anos de experiência no desenvolvimento web, especializo-me na criação de sites institucionais 
+                            e landing pages que não apenas impressionam visualmente, mas também geram resultados concretos para os negócios.
+                        </p>
+                        <p class="about-text">
+                            Minha abordagem combina design moderno, código limpo e estratégias de conversão para entregar projetos 
+                            que superam as expectativas dos clientes e proporcionam experiências excepcionais aos usuários.
+                        </p>
+                        
+                        <div class="about-skills">
+                            <div class="skill-category">
+                                <h4 class="skill-title">Frontend</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">HTML5</span>
+                                    <span class="skill-tag">CSS3</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">React</span>
+                                    <span class="skill-tag">Bootstrap</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4 class="skill-title">Design & UX</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">UI/UX Design</span>
+                                    <span class="skill-tag">Responsive Design</span>
+                                    <span class="skill-tag">Figma</span>
+                                    <span class="skill-tag">Adobe XD</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4 class="skill-title">Otimização</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">SEO</span>
+                                    <span class="skill-tag">Performance</span>
+                                    <span class="skill-tag">Conversão</span>
+                                    <span class="skill-tag">Analytics</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="about-cta">
+                            <a href="#contact" class="btn btn-primary">Vamos Conversar</a>
+                            <a href="tel:47991597258" class="btn btn-outline-primary">
+                                <i class="fas fa-phone"></i> (47) 99159-7258
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-visual">
+                        <div class="about-image-container">
+                            <div class="about-decorations">
+                                <div class="decoration-circle circle-1"></div>
+                                <div class="decoration-circle circle-2"></div>
+                                <div class="decoration-square square-1"></div>
+                                <div class="decoration-square square-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-header text-center">
+                        <span class="section-subtitle">O que eu faço</span>
+                        <h2 class="section-title">Meus Serviços</h2>
+                        <p class="section-description">
+                            Soluções completas para sua presença digital, desde o conceito até a implementação
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Serviço 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="service-title">Sites Institucionais</h3>
+                        <p class="service-description">
+                            Desenvolvimento de sites corporativos modernos, responsivos e otimizados para SEO. 
+                            Perfeitos para estabelecer credibilidade e presença digital profissional.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Design responsivo</li>
+                            <li><i class="fas fa-check"></i> Otimização SEO</li>
+                            <li><i class="fas fa-check"></i> Painel administrativo</li>
+                            <li><i class="fas fa-check"></i> Integração com redes sociais</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price-from">A partir de</span>
+                            <span class="price-value">R$ 1.500</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Serviço 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card featured">
+                        <div class="service-badge">Mais Popular</div>
+                        <div class="service-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="service-title">Landing Pages</h3>
+                        <p class="service-description">
+                            Páginas de alta conversão focadas em resultados. Ideais para campanhas de marketing, 
+                            lançamentos de produtos e captação de leads qualificados.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Foco em conversão</li>
+                            <li><i class="fas fa-check"></i> A/B Testing</li>
+                            <li><i class="fas fa-check"></i> Integração com CRM</li>
+                            <li><i class="fas fa-check"></i> Analytics avançado</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price-from">A partir de</span>
+                            <span class="price-value">R$ 800</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Serviço 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="service-title">Otimização Mobile</h3>
+                        <p class="service-description">
+                            Adaptação e otimização de sites existentes para dispositivos móveis. 
+                            Garantindo performance e usabilidade em todas as telas.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check"></i> Design mobile-first</li>
+                            <li><i class="fas fa-check"></i> Performance otimizada</li>
+                            <li><i class="fas fa-check"></i> Touch-friendly</li>
+                            <li><i class="fas fa-check"></i> Testes em dispositivos</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price-from">A partir de</span>
+                            <span class="price-value">R$ 600</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Processo de Trabalho -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <div class="process-section">
+                        <h3 class="process-title text-center">Como Funciona</h3>
+                        <div class="process-steps">
+                            <div class="process-step">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4 class="step-title">Briefing</h4>
+                                    <p class="step-description">Entendemos suas necessidades e objetivos</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4 class="step-title">Planejamento</h4>
+                                    <p class="step-description">Criamos a estratégia e estrutura do projeto</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4 class="step-title">Desenvolvimento</h4>
+                                    <p class="step-description">Codificamos com as melhores práticas</p>
+                                </div>
+                            </div>
+                            <div class="process-step">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4 class="step-title">Entrega</h4>
+                                    <p class="step-description">Testamos, otimizamos e colocamos no ar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Portfólio -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-header text-center">
+                        <span class="section-subtitle">Meus trabalhos</span>
+                        <h2 class="section-title">Portfólio</h2>
+                        <p class="section-description">
+                            Projetos que demonstram minha expertise em criar soluções digitais eficazes
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Filtros do Portfólio -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="portfolio-filters text-center">
+                        <button class="filter-btn active" data-filter="all">Todos</button>
+                        <button class="filter-btn" data-filter="institutional">Sites Institucionais</button>
+                        <button class="filter-btn" data-filter="landing">Landing Pages</button>
+                        <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Grid do Portfólio -->
+            <div class="row portfolio-grid">
+                <!-- Projeto 1 -->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="institutional">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="img/portfolio-1.jpg" alt="Site Institucional - Empresa de Tecnologia" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <a href="#" class="portfolio-link" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="#" class="portfolio-link external-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Site Institucional</span>
+                            <h3 class="portfolio-title">TechCorp Solutions</h3>
+                            <p class="portfolio-description">Site corporativo moderno para empresa de tecnologia</p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projeto 2 -->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="landing">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="img/portfolio-2.jpg" alt="Landing Page - Curso Online" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <a href="#" class="portfolio-link" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="#" class="portfolio-link external-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Landing Page</span>
+                            <h3 class="portfolio-title">EduMaster Pro</h3>
+                            <p class="portfolio-description">Landing page para curso online com alta conversão</p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projeto 3 -->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="ecommerce">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="img/portfolio-3.jpg" alt="E-commerce - Loja de Roupas" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <a href="#" class="portfolio-link" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="#" class="portfolio-link external-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">E-commerce</span>
+                            <h3 class="portfolio-title">Fashion Store</h3>
+                            <p class="portfolio-description">Loja virtual responsiva com sistema de pagamento</p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projeto 4 -->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="institutional">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="img/portfolio-4.jpg" alt="Site Institucional - Clínica Médica" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <a href="#" class="portfolio-link" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="#" class="portfolio-link external-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Site Institucional</span>
+                            <h3 class="portfolio-title">MedCare Clinic</h3>
+                            <p class="portfolio-description">Site para clínica médica com agendamento online</p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projeto 5 -->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="landing">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="img/portfolio-5.jpg" alt="Landing Page - App Mobile" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <a href="#" class="portfolio-link" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="#" class="portfolio-link external-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Landing Page</span>
+                            <h3 class="portfolio-title">FitApp Launch</h3>
+                            <p class="portfolio-description">Landing page para lançamento de aplicativo fitness</p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">SCSS</span>
+                                <span class="tech-tag">Animations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projeto 6 -->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="institutional">
+                    <div class="portfolio-card">
+                        <div class="portfolio-image">
+                            <img src="img/portfolio-6.jpg" alt="Site Institucional - Escritório de Advocacia" class="img-fluid">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-actions">
+                                    <a href="#" class="portfolio-link" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a href="#" class="portfolio-link external-link" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <span class="portfolio-category">Site Institucional</span>
+                            <h3 class="portfolio-title">Advocacia & Direito</h3>
+                            <p class="portfolio-description">Site elegante para escritório de advocacia</p>
+                            <div class="portfolio-tech">
+                                <span class="tech-tag">WordPress</span>
+                                <span class="tech-tag">Custom Theme</span>
+                                <span class="tech-tag">SEO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Depoimentos -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-header text-center">
+                        <span class="section-subtitle">O que dizem</span>
+                        <h2 class="section-title">Depoimentos</h2>
+                        <p class="section-description">
+                            A satisfação dos meus clientes é a melhor prova da qualidade do meu trabalho
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="testimonials-carousel">
+                        <!-- Depoimento 1 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    "O BM Developer superou todas as nossas expectativas. O site ficou moderno, 
+                                    responsivo e nossos clientes adoraram. As vendas online aumentaram 40% após o lançamento!"
+                                </p>
+                                <div class="testimonial-author">
+                                    <div class="author-info">
+                                        <h4 class="author-name">Maria Silva</h4>
+                                        <span class="author-position">CEO - TechCorp Solutions</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Depoimento 2 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    "Profissional excepcional! Entregou o projeto no prazo, com qualidade impecável 
+                                    e sempre disponível para ajustes. Recomendo sem hesitar!"
+                                </p>
+                                <div class="testimonial-author">
+                                    <div class="author-info">
+                                        <h4 class="author-name">João Santos</h4>
+                                        <span class="author-position">Diretor - EduMaster Pro</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Depoimento 3 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <div class="testimonial-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="testimonial-text">
+                                    "A landing page criada pelo BM Developer converteu muito bem. Tivemos um aumento 
+                                    significativo na captação de leads. Trabalho de alta qualidade!"
+                                </p>
+                                <div class="testimonial-author">
+                                    <div class="author-info">
+                                        <h4 class="author-name">Ana Costa</h4>
+                                        <span class="author-position">Marketing Manager - FitApp</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-header text-center">
+                        <span class="section-subtitle">Vamos conversar</span>
+                        <h2 class="section-title">Entre em Contato</h2>
+                        <p class="section-description">
+                            Pronto para transformar sua ideia em realidade digital? Vamos conversar sobre seu projeto!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4 class="contact-title">Telefone</h4>
+                                    <p class="contact-text">
+                                        <a href="tel:47991597258">(47) 99159-7258</a>
+                                    </p>
+                                    <span class="contact-subtitle">Disponível das 8h às 18h</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4 class="contact-title">WhatsApp</h4>
+                                    <p class="contact-text">
+                                        <a href="https://wa.me/5547991597258" target="_blank">(47) 99159-7258</a>
+                                    </p>
+                                    <span class="contact-subtitle">Resposta rápida garantida</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4 class="contact-title">E-mail</h4>
+                                    <p class="contact-text">
+                                        <a href="mailto:contato@bmdeveloper.com">contato@bmdeveloper.com</a>
+                                    </p>
+                                    <span class="contact-subtitle">Resposta em até 24h</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-cta">
+                            <h3 class="cta-title">Pronto para começar seu projeto?</h3>
+                            <p class="cta-text">
+                                Entre em contato agora e receba um orçamento personalizado para seu projeto. 
+                                Vamos transformar sua visão em uma solução digital de sucesso!
+                            </p>
+                            <div class="cta-buttons">
+                                <a href="https://wa.me/5547991597258" target="_blank" class="btn btn-primary btn-lg">
+                                    <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+                                </a>
+                                <a href="tel:47991597258" class="btn btn-outline-primary btn-lg">
+                                    <i class="fas fa-phone"></i> Ligar Agora
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-content text-center">
+                        <div class="footer-logo">
+                            <span class="logo-text">BM</span>
+                            <span class="logo-subtitle">Developer</span>
+                        </div>
+                        <p class="footer-description">
+                            Especialista em sites institucionais e landing pages de alta conversão
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/5547991597258" class="social-link" aria-label="WhatsApp" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                        <div class="footer-contact">
+                            <a href="tel:47991597258" class="footer-phone">
+                                <i class="fas fa-phone"></i> (47) 99159-7258
+                            </a>
+                        </div>
+                        <div class="footer-bottom">
+                            <p class="footer-copyright">
+                                &copy; 2025 BM Developer. Todos os direitos reservados.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão de volta ao topo -->
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!-- JavaScript Personalizado -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+<!-- Botão Fixo do WhatsApp -->
+<a href="https://wa.me/5547991597258" class="whatsapp-button" target="_blank" aria-label="Fale Conosco pelo WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+
