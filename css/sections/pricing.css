@@ -1,0 +1,487 @@
+/* ===== PRICING SECTION - FAZ MINHA PÁGINA ===== */
+/* Seção de valores com cards de preços otimizados para conversão */
+
+/* ===== CONTAINER PRINCIPAL ===== */
+
+.pricing-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #2a3a4a 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efeito de fundo com padrão geométrico */
+.pricing-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(30deg, rgba(255, 107, 0, 0.1) 12%, transparent 12.5%, transparent 87%, rgba(255, 107, 0, 0.1) 87.5%, rgba(255, 107, 0, 0.1)),
+        linear-gradient(150deg, rgba(255, 107, 0, 0.1) 12%, transparent 12.5%, transparent 87%, rgba(255, 107, 0, 0.1) 87.5%, rgba(255, 107, 0, 0.1)),
+        linear-gradient(30deg, rgba(255, 107, 0, 0.1) 12%, transparent 12.5%, transparent 87%, rgba(255, 107, 0, 0.1) 87.5%, rgba(255, 107, 0, 0.1)),
+        linear-gradient(150deg, rgba(255, 107, 0, 0.1) 12%, transparent 12.5%, transparent 87%, rgba(255, 107, 0, 0.1) 87.5%, rgba(255, 107, 0, 0.1));
+    background-size: 80px 140px;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+.pricing-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Títulos da seção em branco */
+.pricing-section .section-title,
+.pricing-section .section-subtitle {
+    color: white;
+}
+
+.pricing-section .section-title::after {
+    background: var(--accent-color);
+}
+
+/* ===== CARDS DE PREÇOS ===== */
+
+.pricing-card {
+    background: white;
+    border-radius: var(--border-radius-2xl);
+    padding: 2.5rem 2rem;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-xl);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: var(--transition-all);
+    color: var(--text-dark);
+}
+
+/* Efeito hover nos cards */
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+}
+
+/* Card em destaque */
+.pricing-card.featured {
+    background: linear-gradient(135deg, white 0%, #f8f9fa 100%);
+    border: 3px solid var(--accent-color);
+    transform: scale(1.05);
+    box-shadow: 0 25px 50px rgba(255, 107, 0, 0.2);
+}
+
+.pricing-card.featured:hover {
+    transform: scale(1.08) translateY(-5px);
+}
+
+/* Badge do card em destaque */
+.pricing-badge {
+    position: absolute;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0 0 var(--border-radius-lg) var(--border-radius-lg);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    box-shadow: var(--shadow-md);
+    white-space: nowrap;
+}
+
+/* ===== HEADER DOS PREÇOS ===== */
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid rgba(30, 42, 56, 0.1);
+}
+
+.pricing-card.featured .pricing-header {
+    border-bottom-color: rgba(255, 107, 0, 0.2);
+}
+
+.pricing-header h3 {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+/* Preço principal */
+.price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.currency {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-light);
+}
+
+.amount {
+    font-size: 3.5rem;
+    font-weight: var(--font-weight-black);
+    color: var(--accent-color);
+    line-height: 1;
+}
+
+.period {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+    color: var(--text-light);
+}
+
+.price-description {
+    color: var(--text-light);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    margin: 0;
+}
+
+/* ===== LISTA DE CARACTERÍSTICAS ===== */
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+}
+
+.pricing-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-medium);
+}
+
+.pricing-features li:last-child {
+    margin-bottom: 0;
+}
+
+.pricing-features i {
+    color: var(--accent-color);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+    width: 20px;
+    text-align: center;
+}
+
+/* ===== BOTÕES DOS CARDS ===== */
+
+.pricing-card .btn {
+    padding: 1rem 2rem;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    border-radius: var(--border-radius-full);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: var(--transition-all);
+    position: relative;
+    overflow: hidden;
+    margin-top: auto;
+}
+
+.pricing-card .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.pricing-card .btn:hover::before {
+    left: 100%;
+}
+
+.pricing-card .btn-primary {
+    background: var(--accent-color);
+    color: white;
+    border: 2px solid var(--accent-color);
+    box-shadow: var(--shadow-accent);
+}
+
+.pricing-card .btn-primary:hover {
+    background: var(--accent-dark);
+    border-color: var(--accent-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 15px 35px rgba(255, 107, 0, 0.3);
+}
+
+.pricing-card .btn-outline-primary {
+    background: transparent;
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+}
+
+.pricing-card .btn-outline-primary:hover {
+    background: var(--accent-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-accent);
+}
+
+/* ===== ANIMAÇÕES DE ENTRADA ===== */
+
+.pricing-card {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideInUp 0.6s ease forwards;
+}
+
+.pricing-card:nth-child(1) { animation-delay: 0.1s; }
+.pricing-card:nth-child(2) { animation-delay: 0.2s; }
+.pricing-card:nth-child(3) { animation-delay: 0.3s; }
+
+/* Animação do preço */
+.amount {
+    animation: countUp 1s ease 0.5s both;
+}
+
+@keyframes countUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+/* Mobile */
+@media (max-width: 767.98px) {
+    .pricing-card {
+        padding: 2rem 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .pricing-card.featured {
+        transform: none;
+        margin-bottom: 2rem;
+    }
+    
+    .pricing-card.featured:hover {
+        transform: translateY(-5px);
+    }
+    
+    .pricing-header {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+    }
+    
+    .pricing-header h3 {
+        font-size: var(--font-size-xl);
+    }
+    
+    .amount {
+        font-size: 2.5rem;
+    }
+    
+    .pricing-features {
+        margin-bottom: 1.5rem;
+    }
+    
+    .pricing-features li {
+        font-size: var(--font-size-sm);
+        margin-bottom: 0.75rem;
+    }
+    
+    .pricing-badge {
+        padding: 0.5rem 1rem;
+        font-size: var(--font-size-xs);
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .pricing-card {
+        padding: 2.25rem 1.75rem;
+    }
+    
+    .pricing-card.featured {
+        transform: scale(1.02);
+    }
+    
+    .pricing-card.featured:hover {
+        transform: scale(1.05) translateY(-5px);
+    }
+    
+    .amount {
+        font-size: 3rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+    .pricing-section .row {
+        align-items: stretch;
+    }
+    
+    .pricing-card {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .pricing-features {
+        flex-grow: 1;
+    }
+}
+
+/* Desktop grande */
+@media (min-width: 1200px) {
+    .pricing-card {
+        padding: 3rem 2.5rem;
+    }
+    
+    .pricing-header h3 {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .amount {
+        font-size: 4rem;
+    }
+    
+    .pricing-features li {
+        font-size: var(--font-size-lg);
+        margin-bottom: 1.25rem;
+    }
+    
+    .pricing-card .btn {
+        padding: 1.25rem 2.5rem;
+        font-size: var(--font-size-lg);
+    }
+}
+
+/* ===== ESTADOS ESPECIAIS ===== */
+
+/* Efeito de pulso no card em destaque */
+.pricing-card.featured {
+    animation: pulse-featured 3s ease-in-out infinite;
+}
+
+@keyframes pulse-featured {
+    0%, 100% {
+        box-shadow: 0 25px 50px rgba(255, 107, 0, 0.2);
+    }
+    50% {
+        box-shadow: 0 25px 50px rgba(255, 107, 0, 0.4);
+    }
+}
+
+/* ===== ACESSIBILIDADE ===== */
+
+@media (prefers-reduced-motion: reduce) {
+    .pricing-card {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+    
+    .pricing-card:hover {
+        transform: none;
+    }
+    
+    .pricing-card.featured {
+        transform: none;
+        animation: none;
+    }
+    
+    .pricing-card.featured:hover {
+        transform: none;
+    }
+    
+    .amount {
+        animation: none;
+    }
+    
+    .pricing-card .btn::before {
+        transition: none;
+    }
+}
+
+/* Alto contraste */
+@media (prefers-contrast: high) {
+    .pricing-card {
+        border: 2px solid white;
+    }
+    
+    .pricing-card.featured {
+        border: 3px solid var(--accent-color);
+    }
+    
+    .pricing-features i {
+        background: var(--accent-color);
+        color: white;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.875rem;
+    }
+}
+
+/* ===== EFEITOS ADICIONAIS ===== */
+
+/* Partículas flutuantes */
+.pricing-section::after {
+    content: '';
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, rgba(255, 107, 0, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: float 10s ease-in-out infinite;
+    z-index: 1;
+}
+
+/* Efeito de brilho nos cards */
+.pricing-card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 107, 0, 0.1), transparent);
+    transition: left 0.8s ease;
+}
+
+.pricing-card:hover::after {
+    left: 100%;
+}
+
+/* Indicador de popularidade */
+.pricing-card.featured::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 107, 0, 0.05) 0%, transparent 50%);
+    z-index: -1;
+}
+

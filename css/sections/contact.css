@@ -1,0 +1,544 @@
+/* ===== CONTACT SECTION - FAZ MINHA PÁGINA ===== */
+/* Seção de contato otimizada para conversão sem formulário */
+
+/* ===== CONTAINER PRINCIPAL ===== */
+
+.contact-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #2a3a4a 100%);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efeito de fundo com padrão geométrico */
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 25% 25%, rgba(255, 107, 0, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+    z-index: 1;
+}
+
+.contact-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Títulos da seção em branco */
+.contact-section .section-title,
+.contact-section .section-subtitle {
+    color: white;
+}
+
+.contact-section .section-title::after {
+    background: var(--accent-color);
+}
+
+/* ===== INFORMAÇÕES DE CONTATO ===== */
+
+.contact-info {
+    padding-right: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius-xl);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: var(--transition-all);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--accent-color);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== ÍCONES DE CONTATO ===== */
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--accent-color) 0%, #ff8533 100%);
+    border-radius: var(--border-radius-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: var(--transition-transform);
+    box-shadow: var(--shadow-lg);
+}
+
+.contact-item:hover .contact-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: var(--shadow-xl);
+}
+
+.contact-icon i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Cores específicas para cada tipo de contato */
+.contact-item:nth-child(1) .contact-icon {
+    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%); /* WhatsApp */
+}
+
+.contact-item:nth-child(2) .contact-icon {
+    background: linear-gradient(135deg, #ea4335 0%, #d93025 100%); /* Email */
+}
+
+.contact-item:nth-child(3) .contact-icon {
+    background: linear-gradient(135deg, #4285f4 0%, #1a73e8 100%); /* Horário */
+}
+
+/* ===== DETALHES DE CONTATO ===== */
+
+.contact-details h3 {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.contact-details p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.5rem;
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-normal);
+}
+
+.contact-details p:last-child {
+    margin-bottom: 0;
+}
+
+.contact-details a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: var(--font-weight-semibold);
+    transition: var(--transition-colors);
+}
+
+.contact-details a:hover {
+    color: #ff8533;
+    text-decoration: underline;
+}
+
+/* ===== CTA DE CONTATO ===== */
+
+.contact-cta {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius-2xl);
+    padding: 3rem 2.5rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efeito de brilho no CTA */
+.contact-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.8s ease;
+}
+
+.contact-cta:hover::before {
+    left: 100%;
+}
+
+.contact-cta h3 {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.contact-cta p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: var(--font-size-lg);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: 2rem;
+}
+
+/* ===== BOTÃO PRINCIPAL CTA ===== */
+
+.contact-cta .btn {
+    padding: 1.25rem 2.5rem;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+    border-radius: var(--border-radius-full);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    transition: var(--transition-all);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.contact-cta .btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.contact-cta .btn:hover::after {
+    left: 100%;
+}
+
+.contact-cta .btn-primary {
+    background: var(--accent-color);
+    color: white;
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 15px 35px rgba(255, 107, 0, 0.3);
+}
+
+.contact-cta .btn-primary:hover {
+    background: var(--accent-dark);
+    border-color: var(--accent-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 20px 45px rgba(255, 107, 0, 0.4);
+}
+
+.contact-cta .btn i {
+    font-size: 1.25rem;
+}
+
+/* ===== GARANTIA DE RESPOSTA ===== */
+
+.contact-guarantee {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+}
+
+.contact-guarantee i {
+    color: var(--accent-color);
+    font-size: 1.1rem;
+}
+
+/* ===== ANIMAÇÕES DE ENTRADA ===== */
+
+.contact-info {
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideInLeft 0.8s ease 0.2s forwards;
+}
+
+.contact-cta {
+    opacity: 0;
+    transform: translateX(50px);
+    animation: slideInRight 0.8s ease 0.4s forwards;
+}
+
+.contact-item {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideInUp 0.6s ease forwards;
+}
+
+.contact-item:nth-child(1) { animation-delay: 0.6s; }
+.contact-item:nth-child(2) { animation-delay: 0.8s; }
+.contact-item:nth-child(3) { animation-delay: 1.0s; }
+
+/* ===== RESPONSIVIDADE ===== */
+
+/* Mobile */
+@media (max-width: 767.98px) {
+    .contact-info {
+        padding-right: 0;
+        margin-bottom: 3rem;
+    }
+    
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        padding: 1.25rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact-icon {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+    }
+    
+    .contact-icon i {
+        font-size: 1.25rem;
+    }
+    
+    .contact-details h3 {
+        font-size: var(--font-size-lg);
+    }
+    
+    .contact-details p {
+        font-size: var(--font-size-sm);
+    }
+    
+    .contact-cta {
+        padding: 2rem 1.5rem;
+    }
+    
+    .contact-cta h3 {
+        font-size: var(--font-size-xl);
+    }
+    
+    .contact-cta p {
+        font-size: var(--font-size-base);
+    }
+    
+    .contact-cta .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 1rem 2rem;
+        font-size: var(--font-size-base);
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .contact-info {
+        padding-right: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .contact-item {
+        gap: 1.25rem;
+        padding: 1.375rem;
+        margin-bottom: 2rem;
+    }
+    
+    .contact-icon {
+        width: 55px;
+        height: 55px;
+    }
+    
+    .contact-cta {
+        padding: 2.5rem 2rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+    .contact-info {
+        padding-right: 3rem;
+    }
+}
+
+/* Desktop grande */
+@media (min-width: 1200px) {
+    .contact-info {
+        padding-right: 4rem;
+    }
+    
+    .contact-item {
+        gap: 2rem;
+        padding: 2rem;
+        margin-bottom: 3rem;
+    }
+    
+    .contact-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .contact-icon i {
+        font-size: 1.75rem;
+    }
+    
+    .contact-details h3 {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .contact-details p {
+        font-size: var(--font-size-lg);
+    }
+    
+    .contact-cta {
+        padding: 4rem 3rem;
+    }
+    
+    .contact-cta h3 {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .contact-cta p {
+        font-size: var(--font-size-xl);
+    }
+    
+    .contact-cta .btn {
+        padding: 1.5rem 3rem;
+        font-size: var(--font-size-xl);
+    }
+}
+
+/* ===== ESTADOS ESPECIAIS ===== */
+
+/* Efeito de pulso no botão principal */
+.contact-cta .btn-primary {
+    animation: pulse-cta 3s ease-in-out infinite;
+}
+
+@keyframes pulse-cta {
+    0%, 100% {
+        box-shadow: 0 15px 35px rgba(255, 107, 0, 0.3);
+    }
+    50% {
+        box-shadow: 0 15px 35px rgba(255, 107, 0, 0.5);
+    }
+}
+
+/* ===== ACESSIBILIDADE ===== */
+
+@media (prefers-reduced-motion: reduce) {
+    .contact-info,
+    .contact-cta,
+    .contact-item {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+    
+    .contact-item:hover {
+        transform: none;
+    }
+    
+    .contact-item:hover .contact-icon {
+        transform: none;
+    }
+    
+    .contact-cta .btn-primary {
+        animation: none;
+    }
+    
+    .contact-cta::before,
+    .contact-cta .btn::after {
+        transition: none;
+    }
+}
+
+/* Alto contraste */
+@media (prefers-contrast: high) {
+    .contact-item {
+        border: 2px solid white;
+    }
+    
+    .contact-item:hover {
+        border-color: var(--accent-color);
+    }
+    
+    .contact-cta {
+        border: 2px solid white;
+    }
+    
+    .contact-icon {
+        border: 2px solid white;
+    }
+}
+
+/* ===== EFEITOS ADICIONAIS ===== */
+
+/* Partículas flutuantes */
+.contact-section::after {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(255, 107, 0, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: float 12s ease-in-out infinite;
+    z-index: 1;
+}
+
+/* Indicador de disponibilidade */
+.availability-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(40, 167, 69, 0.2);
+    color: #28a745;
+    padding: 0.5rem 1rem;
+    border-radius: var(--border-radius-full);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    margin-top: 1rem;
+}
+
+.availability-indicator::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #28a745;
+    border-radius: 50%;
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0.3; }
+}
+
+/* Estatísticas de resposta */
+.response-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--accent-color);
+}
+
+.stat-label {
+    display: block;
+    font-size: var(--font-size-xs);
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 0.25rem;
+}
+

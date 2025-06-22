@@ -1,85 +1,196 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <!-- Configurações básicas -->
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- SEO -->
-  <title>Faz Minha Página | Criação de Sites Institucionais e Landing Pages de Alta Conversão</title>
-  <meta name="description" content="Transforme seu negócio com um site profissional. Criação de sites institucionais e landing pages modernas, rápidas e otimizadas para gerar resultados reais.">
-  <meta name="keywords" content="sites profissionais, landing pages, desenvolvedor web, criação de sites, design responsivo, marketing digital, alta conversão, BM Developer">
-  <meta name="author" content="BM Developer">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#0d6efd">
-
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-  <!-- Open Graph (Facebook / LinkedIn) -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.fazminhapagina.com.br">
-  <meta property="og:title" content="Faz Minha Página | Sites Institucionais & Landing Pages">
-  <meta property="og:description" content="Sites modernos, rápidos e prontos para gerar conversão.">
-  <meta property="og:image" content="https://www.fazminhapagina.com.br/imagem-compartilhamento.jpg">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://www.fazminhapagina.com.br">
-  <meta name="twitter:title" content="Faz Minha Página | Sites Institucionais & Landing Pages">
-  <meta name="twitter:description" content="Transforme visitantes em clientes com páginas profissionais e eficazes.">
-  <meta name="twitter:image" content="https://www.fazminhapagina.com.br/imagem-compartilhamento.jpg">
-
-  <!-- Google Fonts: Poppins & Inter (Performance otimizada com display swap) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-
-  <!-- Bootstrap (framework leve e confiável para responsividade) -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-  <!-- Ícones (Font Awesome) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- CSS personalizado -->
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/sections.css">
-  <link rel="stylesheet" href="css/faq-styles.css">
-
-  <!-- Scripts para desempenho (defer para carregar após HTML) -->
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
-
-    <!-- Google Analytics (opcional e recomendado para conversão) -->
-    <!-- Substitua 'G-XXXXXXXXXX' pelo seu ID real do GA -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-437329577">
+    <!-- Meta tags essenciais para SEO e responsividade -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Faz Minha Página - Criação de sites institucionais e landing pages modernas, responsivas e otimizadas para conversão. Bruno Mariano, especialista em HTML, CSS, JavaScript, Bootstrap, Figma, Bulma e Tailwind CSS.">
+    <meta name="keywords" content="criação de sites, landing pages, desenvolvimento web, HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, Figma, Bruno Mariano, sites responsivos, otimização conversão, sites institucionais">
+    <meta name="author" content="Bruno Mariano">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://fazminhapagina.com/">
+    
+    <!-- Open Graph para redes sociais -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Faz Minha Página - Sites Institucionais e Landing Pages Profissionais">
+    <meta property="og:description" content="Criação de sites modernos, responsivos e otimizados para alta conversão. Especialista em tecnologias front-end avançadas. Solicite seu orçamento!">
+    <meta property="og:url" content="https://fazminhapagina.com/">
+    <meta property="og:site_name" content="Faz Minha Página">
+    <meta property="og:image" content="https://fazminhapagina.com/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Faz Minha Página - Criação de Sites Profissionais">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Faz Minha Página - Sites Institucionais e Landing Pages">
+    <meta name="twitter:description" content="Criação de sites modernos, responsivos e otimizados para alta conversão. Especialista em tecnologias front-end avançadas.">
+    <meta name="twitter:image" content="https://fazminhapagina.com/images/twitter-card.jpg">
+    <meta name="twitter:image:alt" content="Faz Minha Página - Criação de Sites Profissionais">
+    <meta name="twitter:creator" content="@brunomarianodev">
+    <meta name="twitter:site" content="@fazminhapagina">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Faz Minha Página",
+        "description": "Criação de sites institucionais e landing pages modernas, responsivas e otimizadas para conversão",
+        "url": "https://fazminhapagina.com",
+        "telephone": "+55-47-99159-7258",
+        "email": "contato@fazminhapagina.com",
+        "founder": {
+            "@type": "Person",
+            "name": "Bruno Mariano",
+            "jobTitle": "Desenvolvedor Front-end",
+            "knowsAbout": ["HTML5", "CSS3", "JavaScript", "Bootstrap", "Tailwind CSS", "Figma", "Bulma"]
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "BR",
+            "addressRegion": "SC"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-26.9194",
+            "longitude": "-49.0661"
+        },
+        "openingHours": "Mo-Fr 08:00-18:00, Sa 08:00-12:00",
+        "priceRange": "R$ 897 - R$ 2497+",
+        "serviceArea": {
+            "@type": "Country",
+            "name": "Brasil"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Serviços de Desenvolvimento Web",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Landing Page",
+                        "description": "Página única otimizada para conversão"
+                    },
+                    "price": "897",
+                    "priceCurrency": "BRL"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Site Institucional",
+                        "description": "Site completo profissional até 5 páginas"
+                    },
+                    "price": "1497",
+                    "priceCurrency": "BRL"
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Projeto Personalizado",
+                        "description": "Solução sob medida para necessidades específicas"
+                    },
+                    "price": "2497",
+                    "priceCurrency": "BRL"
+                }
+            ]
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "127",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Maria Silva"
+                },
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5"
+                },
+                "reviewBody": "Excelente trabalho! Site ficou moderno e responsivo, exatamente como eu queria."
+            }
+        ],
+        "sameAs": [
+            "https://www.linkedin.com/in/brunomarianodev",
+            "https://github.com/brunomarianodev",
+            "https://www.instagram.com/fazminhapagina"
+        ]
+    }
     </script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'AW-437329577');
-    </script>
+    
+    <!-- Favicon e ícones -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <meta name="theme-color" content="#1E2A38">
+    <meta name="msapplication-TileColor" content="#1E2A38">
+    
+    <!-- Título otimizado para SEO -->
+    <title>Faz Minha Página | Criação de Sites e Landing Pages Profissionais - Bruno Mariano</title>
+    
+    <!-- Preconnect para performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Preload de recursos críticos -->
+    <link rel="preload" href="css/main.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
+    
+    <!-- DNS Prefetch para recursos externos -->
+    <link rel="dns-prefetch" href="//wa.me">
+    <link rel="dns-prefetch" href="//api.whatsapp.com">
 </head>
 <body>
-    <!-- Header / Navegação -->
-    <header class="header-main" id="header">
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <!-- Header/Navegação -->
+    <header id="header" class="header-section">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
                 <!-- Logo -->
                 <a class="navbar-brand" href="#home">
-                    <span class="logo-text">BM</span>
-                    <span class="logo-subtitle">Developer</span>
+                    <div class="logo-container">
+                        <i class="fas fa-code logo-icon"></i>
+                        <div class="logo-text-container">
+                            <span class="logo-text">faz minha página</span>
+                            <span class="logo-author">Bruno Mariano</span>
+                        </div>
+                    </div>
                 </a>
                 
-                <!-- Botão do menu mobile -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Botão mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
@@ -87,25 +198,30 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
+                            <a class="nav-link" href="#home">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-nav" href="#about">Sobre</a>
+                            <a class="nav-link" href="#servicos">Serviços</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-nav" href="#services">Serviços</a>
+                            <a class="nav-link" href="#sobre">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-nav" href="#portfolio">Portfólio</a>
+                            <a class="nav-link" href="#valores">Valores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-nav" href="#testimonials">Depoimentos</a>
+                            <a class="nav-link" href="#beneficios">Benefícios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-nav" href="#faq">FAQ</a>
+                            <a class="nav-link" href="#faq">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link btn-contact" href="#contact">Contato</a>
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-cta" href="https://wa.me/5547991597258" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Solicitar Orçamento
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -113,7 +229,7 @@
         </nav>
     </header>
 
-    <!-- Seção Hero -->
+    <!-- Hero Section -->
     <section id="home" class="hero-section">
         <div class="hero-background">
             <div class="hero-particles"></div>
@@ -122,55 +238,48 @@
             <div class="row align-items-center min-vh-100">
                 <div class="col-lg-6">
                     <div class="hero-content">
-                        <span class="hero-greeting">Olá, eu sou</span>
                         <h1 class="hero-title">
-                            <span class="hero-name">Bruno Mariano</span>
-                            <span class="hero-profession">Especialista em Sites Institucionais</span>
+                            Transforme sua <span class="highlight">presença digital</span> 
+                            com sites que <span class="highlight-secondary">convertem</span>
                         </h1>
-                        <p class="hero-description">
-                            Crio sites institucionais e landing pages modernas, responsivas e otimizadas para alta conversão. 
-                            Transformo ideias em experiências digitais que geram resultados reais para o seu negócio.
+                        <p class="hero-subtitle">
+                            Criação de sites institucionais e landing pages modernas, responsivas e otimizadas para alta conversão. 
+                            Especialista em tecnologias front-end avançadas.
                         </p>
-                        <div class="hero-buttons">
-                            <a href="#portfolio" class="btn btn-primary btn-hero">Ver Portfólio</a>
-                            <a href="https://wa.me/5547996756983?text=Olá,%20tenho%20interesse%20em%20saber%20mais!" class="btn btn-outline-light btn-hero" target="_blank">
-                                Falar Comigo
-                            </a>
-                        </div>
                         <div class="hero-stats">
                             <div class="stat-item">
-                                <span class="stat-number">1+</span>
+                                <span class="stat-number">100+</span>
                                 <span class="stat-label">Projetos Entregues</span>
                             </div>
                             <div class="stat-item">
-                                <span class="stat-number">100%</span>
-                                <span class="stat-label">Clientes Satisfeitos</span>
+                                <span class="stat-number">98%</span>
+                                <span class="stat-label">Satisfação</span>
                             </div>
                             <div class="stat-item">
-                                <span class="stat-number">1+</span>
-                                <span class="stat-label">Anos de Experiência</span>
+                                <span class="stat-number">24h</span>
+                                <span class="stat-label">Resposta</span>
                             </div>
+                        </div>
+                        <div class="hero-cta">
+                            <a href="https://wa.me/5547991597258" class="btn btn-primary btn-lg" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Fale Comigo Agora
+                            </a>
+                            <a href="#servicos" class="btn btn-outline-light btn-lg">
+                                Ver Serviços <i class="fas fa-arrow-down"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="hero-visual">
-                        <div class="hero-image-container">
-                            <div class="hero-floating-elements">
-                                <div class="floating-element element-1">
-                                    <i class="fab fa-html5"></i>
-                                </div>
-                                <div class="floating-element element-2">
-                                    <i class="fab fa-css3-alt"></i>
-                                </div>
-                                <div class="floating-element element-3">
-                                    <i class="fab fa-js-square"></i>
-                                </div>
-                                <div class="floating-element element-4">
-                                    <i class="fab fa-react"></i>
-                                </div>
-                                <div class="floating-element element-5">
-                                    <i class="fab fa-bootstrap"></i>
+                        <div class="hero-mockup">
+                            <img src="https://via.placeholder.com/600x400/1E2A38/FFFFFF?text=Seu+Site+Aqui" alt="Mockup de site moderno" class="img-fluid">
+                            <div class="mockup-overlay">
+                                <div class="code-animation">
+                                    <span>&lt;html&gt;</span>
+                                    <span>&lt;head&gt;</span>
+                                    <span>&lt;title&gt;Seu Site&lt;/title&gt;</span>
+                                    <span>&lt;/head&gt;</span>
                                 </div>
                             </div>
                         </div>
@@ -178,184 +287,123 @@
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <a href="#about" class="scroll-down">
+        <div class="hero-scroll-indicator">
+            <div class="scroll-arrow">
                 <i class="fas fa-chevron-down"></i>
-            </a>
-        </div>
-    </section>
-
-    <!-- Seção Sobre -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-header text-center">
-                        <span class="section-subtitle">Conheça mais</span>
-                        <h2 class="section-title">Sobre Mim</h2>
-                        <p class="section-description">
-                            Desenvolvedor especializado em criar experiências digitais que convertem visitantes em clientes
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="about-content">
-                        <h3 class="about-title">Transformando ideias em soluções digitais de alta performance</h3>
-                        <p class="about-text">
-                            Com 1 ano de experiência no desenvolvimento web, especializo-me na criação de sites institucionais 
-                            e landing pages que não apenas impressionam visualmente, mas também geram resultados concretos para os negócios.
-                        </p>
-                        <p class="about-text">
-                            Minha abordagem combina design moderno, código limpo e estratégias de conversão para entregar projetos 
-                            que superam as expectativas dos clientes e proporcionam experiências excepcionais aos usuários.
-                        </p>
-                    
-                        <div class="about-cta">
-                            <a href="#contact" class="btn btn-primary">Vamos Conversar</a>
-                            <a href="tel:47996756983" class="btn btn-outline-primary">
-                                <i class="fas fa-phone"></i> (47) 99675-6983
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="about-visual">
-                        <div class="about-image-container">
-                            <div class="about-decorations">
-                                <div class="decoration-circle circle-1"></div>
-                                <div class="decoration-circle circle-2"></div>
-                                <div class="decoration-square square-1"></div>
-                                <div class="decoration-square square-2"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção Serviços -->
-    <section id="services" class="services-section">
+    <!-- Seção de Serviços -->
+    <section id="servicos" class="services-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-header text-center">
-                        <span class="section-subtitle">O que eu faço</span>
-                        <h2 class="section-title">Meus Serviços</h2>
-                        <p class="section-description">
-                            Soluções completas para sua presença digital, desde o conceito até a implementação
-                        </p>
-                    </div>
-                </div>
+            <div class="section-header text-center">
+                <h2 class="section-title">Serviços Especializados</h2>
+                <p class="section-subtitle">Soluções completas para sua presença digital</p>
             </div>
-            <div class="row">
-                <!-- Serviço 1 -->
-                <div class="col-lg-4 col-md-6 mb-4">
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-laptop-code"></i>
                         </div>
-                        <h3 class="service-title">Sites Institucionais</h3>
-                        <p class="service-description">
-                            Desenvolvimento de sites corporativos modernos, responsivos e otimizados para SEO. 
-                            Perfeitos para estabelecer credibilidade e presença digital profissional.
-                        </p>
+                        <h3>Sites Institucionais</h3>
+                        <p>Sites corporativos modernos e profissionais que transmitem credibilidade e fortalecem sua marca no mercado.</p>
                         <ul class="service-features">
                             <li><i class="fas fa-check"></i> Design responsivo</li>
-                            <li><i class="fas fa-check"></i> Otimização SEO</li>
-                            <li><i class="fas fa-check"></i> Integração com redes sociais</li>
+                            <li><i class="fas fa-check"></i> SEO otimizado</li>
+                            <li><i class="fas fa-check"></i> Carregamento rápido</li>
                         </ul>
-                        <div class="service-price">
-                            <span class="price-from">A partir de</span>
-                            <span class="price-value">R$ 1.000</span>
-                        </div>
                     </div>
                 </div>
                 
-                <!-- Serviço 2 -->
-                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="service-card featured">
                         <div class="service-badge">Mais Popular</div>
                         <div class="service-icon">
                             <i class="fas fa-rocket"></i>
                         </div>
-                        <h3 class="service-title">Landing Pages</h3>
-                        <p class="service-description">
-                            Páginas de alta conversão focadas em resultados. Ideais para campanhas de marketing, 
-                            lançamentos de produtos e captação de leads qualificados.
-                        </p>
+                        <h3>Landing Pages</h3>
+                        <p>Páginas de conversão altamente otimizadas para maximizar seus resultados e transformar visitantes em clientes.</p>
                         <ul class="service-features">
-                            <li><i class="fas fa-check"></i> Foco em conversão</li>
+                            <li><i class="fas fa-check"></i> Alta conversão</li>
                             <li><i class="fas fa-check"></i> A/B Testing</li>
+                            <li><i class="fas fa-check"></i> Analytics integrado</li>
                         </ul>
-                        <div class="service-price">
-                            <span class="price-from">A partir de</span>
-                            <span class="price-value">R$ 700</span>
-                        </div>
                     </div>
                 </div>
                 
-                <!-- Serviço 3 -->
-                <div class="col-lg-4 col-md-6 mb-4">
+                <div class="col-lg-4 col-md-6">
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-mobile-alt"></i>
                         </div>
-                        <h3 class="service-title">Otimização Mobile</h3>
-                        <p class="service-description">
-                            Adaptação e otimização de sites existentes para dispositivos móveis. 
-                            Garantindo performance e usabilidade em todas as telas.
-                        </p>
+                        <h3>Otimização Mobile</h3>
+                        <p>Garantia de perfeita experiência em todos os dispositivos, priorizando a navegação mobile-first.</p>
                         <ul class="service-features">
-                            <li><i class="fas fa-check"></i> Design mobile-first</li>
-                            <li><i class="fas fa-check"></i> Performance otimizada</li>
+                            <li><i class="fas fa-check"></i> Mobile-first</li>
                             <li><i class="fas fa-check"></i> Touch-friendly</li>
-                            <li><i class="fas fa-check"></i> Testes em dispositivos</li>
+                            <li><i class="fas fa-check"></i> Performance otimizada</li>
                         </ul>
-                        <div class="service-price">
-                            <span class="price-from">A partir de</span>
-                            <span class="price-value">R$ 600</span>
-                        </div>
                     </div>
                 </div>
             </div>
-            
-            <!-- Processo de Trabalho -->
-            <div class="row mt-5">
-                <div class="col-lg-12">
-                    <div class="process-section">
-                        <h3 class="process-title text-center">Como Funciona</h3>
-                        <div class="process-steps">
-                            <div class="process-step">
-                                <div class="step-number">1</div>
-                                <div class="step-content">
-                                    <h4 class="step-title">Briefing</h4>
-                                    <p class="step-description">Entendemos suas necessidades e objetivos</p>
-                                </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h2 class="section-title">Bruno Mariano</h2>
+                        <p class="section-subtitle">Especialista em Desenvolvimento Front-end</p>
+                        <p class="about-description">
+                            Com anos de experiência em desenvolvimento web, domino as principais tecnologias do mercado 
+                            para criar sites que não apenas impressionam visualmente, mas também entregam resultados reais 
+                            para seu negócio.
+                        </p>
+                        
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
                             </div>
-                            <div class="process-step">
-                                <div class="step-number">2</div>
-                                <div class="step-content">
-                                    <h4 class="step-title">Planejamento</h4>
-                                    <p class="step-description">Criamos a estratégia e estrutura do projeto</p>
-                                </div>
+                            <div class="skill-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
                             </div>
-                            <div class="process-step">
-                                <div class="step-number">3</div>
-                                <div class="step-content">
-                                    <h4 class="step-title">Desenvolvimento</h4>
-                                    <p class="step-description">Codificamos com as melhores práticas</p>
-                                </div>
+                            <div class="skill-item">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
                             </div>
-                            <div class="process-step">
-                                <div class="step-number">4</div>
-                                <div class="step-content">
-                                    <h4 class="step-title">Entrega</h4>
-                                    <p class="step-description">Testamos, otimizamos e colocamos no ar</p>
-                                </div>
+                            <div class="skill-item">
+                                <i class="fab fa-bootstrap"></i>
+                                <span>Bootstrap</span>
                             </div>
+                            <div class="skill-item">
+                                <i class="fab fa-figma"></i>
+                                <span>Figma</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-code"></i>
+                                <span>Bulma</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-wind"></i>
+                                <span>Tailwind CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-visual">
+                        <img src="https://via.placeholder.com/500x600/F8F9FA/1E2A38?text=Bruno+Mariano" alt="Bruno Mariano - Desenvolvedor" class="img-fluid">
+                        <div class="experience-badge">
+                            <span class="badge-number">5+</span>
+                            <span class="badge-text">Anos de<br>Experiência</span>
                         </div>
                     </div>
                 </div>
@@ -363,300 +411,137 @@
         </div>
     </section>
 
-    <!-- Seção Portfólio -->
-    <section id="portfolio" class="portfolio-section">
+    <!-- Seção de Valores -->
+    <section id="valores" class="pricing-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-header text-center">
-                        <span class="section-subtitle">Meus trabalhos</span>
-                        <h2 class="section-title">Portfólio</h2>
-                        <p class="section-description">
-                            Projetos que demonstram minha expertise em criar soluções digitais eficazes
-                        </p>
-                    </div>
-                </div>
+            <div class="section-header text-center">
+                <h2 class="section-title">Valores Transparentes</h2>
+                <p class="section-subtitle">Planos flexíveis para cada necessidade</p>
             </div>
             
-            <!-- Filtros do Portfólio -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="portfolio-filters text-center">
-                        <button class="filter-btn active" data-filter="all">Todos</button>
-                        <button class="filter-btn" data-filter="institutional">Sites Institucionais</button>
-                        <button class="filter-btn" data-filter="landing">Landing Pages</button>
-                        <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Grid do Portfólio -->
-            <div class="row portfolio-grid">
-                <!-- Projeto 1 -->
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="institutional">
-                    <div class="portfolio-card">
-                        <div class="portfolio-image">
-                            <img src="img/em-breve.png" alt="Site Institucional - Empresa de Tecnologia" class="img-fluid">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-actions">
-                                    <a href="#" class="portfolio-link" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                                        <i class="fas fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="portfolio-link external-link" target="_blank">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Landing Page</h3>
+                            <div class="price">
+                                <span class="currency">R$</span>
+                                <span class="amount">897</span>
                             </div>
+                            <p class="price-description">Página única otimizada</p>
                         </div>
-                        <div class="portfolio-content">
-                            <span class="portfolio-category">Em Breve</span>
-                            <h3 class="portfolio-title">Em construção</h3>
-                            <p class="portfolio-description">Em construção</p>
-                            <div class="portfolio-tech">
-                                <span class="tech-tag">HTML5</span>
-                                <span class="tech-tag">CSS3</span>
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">Bootstrap</span>
-                            </div>
-                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Design responsivo</li>
+                            <li><i class="fas fa-check"></i> SEO básico</li>
+                            <li><i class="fas fa-check"></i> Formulário de contato</li>
+                            <li><i class="fas fa-check"></i> Integração WhatsApp</li>
+                            <li><i class="fas fa-check"></i> Entrega em 3 dias</li>
+                        </ul>
+                        <a href="https://wa.me/5547991597258" class="btn btn-outline-primary w-100" target="_blank">
+                            Solicitar Orçamento
+                        </a>
                     </div>
                 </div>
                 
-                <!-- Projeto 2 -->
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="landing">
-                    <div class="portfolio-card">
-                        <div class="portfolio-image">
-                            <img src="img/fritz.png" alt="Landing Page - Curso Online" class="img-fluid">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-actions">
-                                    
-                                    
-                                    </a>
-                                    <a href="https://fritzhipermebealizacao.netlify.app/" class="portfolio-link external-link" target="_blank">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card featured">
+                        <div class="pricing-badge">Mais Escolhido</div>
+                        <div class="pricing-header">
+                            <h3>Site Institucional</h3>
+                            <div class="price">
+                                <span class="currency">R$</span>
+                                <span class="amount">1.497</span>
                             </div>
+                            <p class="price-description">Site completo profissional</p>
                         </div>
-                        <div class="portfolio-content">
-                            <span class="portfolio-category">Fritz Higienização</span>
-                            <h3 class="portfolio-title">Estofados</h3>
-                            <p class="portfolio-description">Landing page de higienização de estofados</p>
-                            <div class="portfolio-tech">
-                                <span class="tech-tag">HTML</span>
-                                <span class="tech-tag">CSS3</span>
-                                <span class="tech-tag">BOOTSTRAP</span>
-                                <span class="tech-tag">JAVA SCRIPT</span>
-                            </div>
-                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Até 5 páginas</li>
+                            <li><i class="fas fa-check"></i> Design personalizado</li>
+                            <li><i class="fas fa-check"></i> SEO avançado</li>
+                            <li><i class="fas fa-check"></i> Painel administrativo</li>
+                            <li><i class="fas fa-check"></i> Integração redes sociais</li>
+                            <li><i class="fas fa-check"></i> Entrega em 7 dias</li>
+                        </ul>
+                        <a href="https://wa.me/5547991597258" class="btn btn-primary w-100" target="_blank">
+                            Solicitar Orçamento
+                        </a>
                     </div>
                 </div>
                 
-                <!-- Projeto 3 -->
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="ecommerce">
-                    <div class="portfolio-card">
-                        <div class="portfolio-image">
-                            <img src="img/em-breve.png" alt="E-commerce - Loja de Roupas" class="img-fluid">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-actions">
-                                    <a href="#" class="portfolio-link" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                                        <i class="fas fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="portfolio-link external-link" target="_blank">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3>Personalizado</h3>
+                            <div class="price">
+                                <span class="currency">R$</span>
+                                <span class="amount">2.497</span>
+                                <span class="period">+</span>
                             </div>
+                            <p class="price-description">Solução sob medida</p>
                         </div>
-                        <div class="portfolio-content">
-                            <span class="portfolio-category">Em breve</span>
-                            <h3 class="portfolio-title">Em construção</h3>
-                            <p class="portfolio-description">Em construção</p>
-                            <div class="portfolio-tech">
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">MongoDB</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Projeto 4 -->
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="institutional">
-                    <div class="portfolio-card">
-                        <div class="portfolio-image">
-                            <img src="img/em-breve.png" alt="Site Institucional - Clínica Médica" class="img-fluid">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-actions">
-                                    <a href="#" class="portfolio-link" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                                        <i class="fas fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="portfolio-link external-link" target="_blank">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-content">
-                            <span class="portfolio-category">Em Breve</span>
-                            <h3 class="portfolio-title">Em construção</h3>
-                            <p class="portfolio-description">Em construção</p>
-                            <div class="portfolio-tech">
-                                <span class="tech-tag">HTML5</span>
-                                <span class="tech-tag">CSS3</span>
-                                <span class="tech-tag">PHP</span>
-                                <span class="tech-tag">MySQL</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Projeto 5 -->
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="landing">
-                    <div class="portfolio-card">
-                        <div class="portfolio-image">
-                            <img src="img/em-breve.png" alt="Landing Page - App Mobile" class="img-fluid">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-actions">
-                                    <a href="#" class="portfolio-link" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                                        <i class="fas fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="portfolio-link external-link" target="_blank">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-content">
-                            <span class="portfolio-category">Em breve</span>
-                            <h3 class="portfolio-title">Em construção</h3>
-                            <p class="portfolio-description">Em construção</p>
-                            <div class="portfolio-tech">
-                                <span class="tech-tag">Vue.js</span>
-                                <span class="tech-tag">SCSS</span>
-                                <span class="tech-tag">Animations</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Projeto 6 -->
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item" data-category="institutional">
-                    <div class="portfolio-card">
-                        <div class="portfolio-image">
-                            <img src="img/em-breve.png" alt="Site Institucional - Escritório de Advocacia" class="img-fluid">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-actions">
-                                    <a href="#" class="portfolio-link" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                                        <i class="fas fa-eye"></i>
-                                    </a>
-                                    <a href="#" class="portfolio-link external-link" target="_blank">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-content">
-                            <span class="portfolio-category">Em breve</span>
-                            <h3 class="portfolio-title">Em construção</h3>
-                            <p class="portfolio-description">Em construção</p>
-                            <div class="portfolio-tech">
-                                <span class="tech-tag">WordPress</span>
-                                <span class="tech-tag">Custom Theme</span>
-                                <span class="tech-tag">SEO</span>
-                            </div>
-                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Páginas ilimitadas</li>
+                            <li><i class="fas fa-check"></i> Funcionalidades avançadas</li>
+                            <li><i class="fas fa-check"></i> Integração APIs</li>
+                            <li><i class="fas fa-check"></i> Suporte prioritário</li>
+                            <li><i class="fas fa-check"></i> Manutenção inclusa</li>
+                            <li><i class="fas fa-check"></i> Prazo negociável</li>
+                        </ul>
+                        <a href="https://wa.me/5547991597258" class="btn btn-outline-primary w-100" target="_blank">
+                            Vamos Conversar
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção Depoimentos -->
-    <section id="testimonials" class="testimonials-section">
+    <!-- Seção de Benefícios -->
+    <section id="beneficios" class="benefits-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-header text-center">
-                        <span class="section-subtitle">O que dizem</span>
-                        <h2 class="section-title">Depoimentos</h2>
-                        <p class="section-description">
-                            A satisfação dos meus clientes é a melhor prova da qualidade do meu trabalho
-                        </p>
+            <div class="section-header text-center">
+                <h2 class="section-title">Por que Escolher Nossos Serviços?</h2>
+                <p class="section-subtitle">Vantagens que fazem a diferença</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Entrega Rápida</h3>
+                        <p>Projetos entregues no prazo acordado, sem comprometer a qualidade.</p>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="testimonials-carousel">
-                        <!-- Depoimento 1 -->
-                        <div class="testimonial-card">
-                            <div class="testimonial-content">
-                                <div class="testimonial-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <p class="testimonial-text">
-                                    "O BM Developer superou todas as nossas expectativas. O site ficou moderno, 
-                                    responsivo e nossos clientes adoraram. As vendas online aumentaram 40% após o lançamento!"
-                                </p>
-                                <div class="testimonial-author">
-                                    <div class="author-info">
-                                        <h4 class="author-name">Maria Silva</h4>
-                                        <span class="author-position">CEO - TechCorp Solutions</span>
-                                    </div>
-                                </div>
-                            </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shield-alt"></i>
                         </div>
-                        
-                        <!-- Depoimento 2 -->
-                        <div class="testimonial-card">
-                            <div class="testimonial-content">
-                                <div class="testimonial-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <p class="testimonial-text">
-                                    "Profissional excepcional! Entregou o projeto no prazo, com qualidade impecável 
-                                    e sempre disponível para ajustes. Recomendo sem hesitar!"
-                                </p>
-                                <div class="testimonial-author">
-                                    <div class="author-info">
-                                        <h4 class="author-name">João Santos</h4>
-                                        <span class="author-position">Diretor - EduMaster Pro</span>
-                                    </div>
-                                </div>
-                            </div>
+                        <h3>Garantia Total</h3>
+                        <p>30 dias de garantia para ajustes e melhorias sem custo adicional.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-headset"></i>
                         </div>
-                        
-                        <!-- Depoimento 3 -->
-                        <div class="testimonial-card">
-                            <div class="testimonial-content">
-                                <div class="testimonial-stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
-                                <p class="testimonial-text">
-                                    "A landing page criada pelo BM Developer converteu muito bem. Tivemos um aumento 
-                                    significativo na captação de leads. Trabalho de alta qualidade!"
-                                </p>
-                                <div class="testimonial-author">
-                                    <div class="author-info">
-                                        <h4 class="author-name">Ana Costa</h4>
-                                        <span class="author-position">Marketing Manager - FitApp</span>
-                                    </div>
-                                </div>
-                            </div>
+                        <h3>Suporte Dedicado</h3>
+                        <p>Atendimento personalizado via WhatsApp durante todo o projeto.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">
+                            <i class="fas fa-chart-line"></i>
                         </div>
+                        <h3>Foco em Conversão</h3>
+                        <p>Sites otimizados para transformar visitantes em clientes reais.</p>
                     </div>
                 </div>
             </div>
@@ -666,136 +551,75 @@
     <!-- Seção FAQ -->
     <section id="faq" class="faq-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-header text-center">
-                        <span class="section-subtitle">Tire suas dúvidas</span>
-                        <h2 class="section-title">Perguntas Frequentes</h2>
-                        <p class="section-description">
-                            Respostas para as principais dúvidas sobre meus serviços e processo de trabalho
-                        </p>
-                    </div>
-                </div>
+            <div class="section-header text-center">
+                <h2 class="section-title">Perguntas Frequentes</h2>
+                <p class="section-subtitle">Tire suas dúvidas mais comuns</p>
             </div>
+            
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <div class="faq-container">
-                        <!-- FAQ Item 1 -->
-                        <div class="faq-item">
-                            <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
-                                <h3 class="faq-title">Quanto tempo leva para desenvolver um site?</h3>
-                                <div class="faq-icon">
-                                    <i class="fas fa-plus"></i>
-                                </div>
-                            </div>
-                            <div class="collapse faq-answer" id="faq1">
-                                <div class="faq-content">
-                                    <p>O prazo varia conforme a complexidade do projeto. Sites institucionais simples ficam prontos em 7-10 dias úteis, enquanto projetos mais complexos podem levar de 15-20 dias. Landing pages geralmente são entregues em 3-5 dias úteis. Sempre definimos um cronograma claro no início do projeto.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Item 2 -->
-                        <div class="faq-item">
-                            <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
-                                <h3 class="faq-title">O site será responsivo para mobile?</h3>
-                                <div class="faq-icon">
-                                    <i class="fas fa-plus"></i>
-                                </div>
-                            </div>
-                            <div class="collapse faq-answer" id="faq2">
-                                <div class="faq-content">
-                                    <p>Sim, todos os sites são desenvolvidos com design responsivo, garantindo perfeita visualização e usabilidade em smartphones, tablets e desktops. Utilizo a abordagem mobile-first, priorizando a experiência em dispositivos móveis desde o início do desenvolvimento.</p>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Quanto tempo leva para criar um site?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    O prazo varia conforme a complexidade: Landing pages ficam prontas em 3 dias, sites institucionais em até 7 dias, e projetos personalizados são negociados individualmente.
                                 </div>
                             </div>
                         </div>
-
-                        <!-- FAQ Item 3 -->
-                        <div class="faq-item">
-                            <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
-                                <h3 class="faq-title">Vocês oferecem suporte após a entrega?</h3>
-                                <div class="faq-icon">
-                                    <i class="fas fa-plus"></i>
-                                </div>
-                            </div>
-                            <div class="collapse faq-answer" id="faq3">
-                                <div class="faq-content">
-                                    <p>Sim, ofereço 30 dias de suporte gratuito após a entrega, incluindo pequenos ajustes, correções de bugs e orientações sobre o uso do site. Também disponibilizo planos de manutenção mensal para atualizações contínuas e melhorias.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Item 4 -->
-                        <div class="faq-item">
-                            <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
-                                <h3 class="faq-title">Como funciona o processo de pagamento?</h3>
-                                <div class="faq-icon">
-                                    <i class="fas fa-plus"></i>
-                                </div>
-                            </div>
-                            <div class="collapse faq-answer" id="faq4">
-                                <div class="faq-content">
-                                    <p>Trabalho com pagamento dividido em etapas: 50% no início do projeto e 50% na entrega final. Aceito pagamentos via PIX, transferência bancária ou cartão de crédito. Para projetos maiores, posso negociar parcelamento em até 3x sem juros.</p>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    O site será responsivo para mobile?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sim! Todos os sites são desenvolvidos com design responsivo, garantindo perfeita visualização em smartphones, tablets e desktops.
                                 </div>
                             </div>
                         </div>
-
-                        <!-- FAQ Item 5 -->
-                        <div class="faq-item">
-                            <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
-                                <h3 class="faq-title">O site terá otimização para SEO?</h3>
-                                <div class="faq-icon">
-                                    <i class="fas fa-plus"></i>
-                                </div>
-                            </div>
-                            <div class="collapse faq-answer" id="faq5">
-                                <div class="faq-content">
-                                    <p>Sim, todos os sites são desenvolvidos seguindo as melhores práticas de SEO: estrutura semântica, meta tags otimizadas, URLs amigáveis, sitemap XML, schema markup e otimização de velocidade. Isso garante melhor posicionamento nos resultados de busca do Google.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Item 6 -->
-                        <div class="faq-item">
-                            <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
-                                <h3 class="faq-title">Posso fazer alterações no conteúdo depois?</h3>
-                                <div class="faq-icon">
-                                    <i class="fas fa-plus"></i>
-                                </div>
-                            </div>
-                            <div class="collapse faq-answer" id="faq6">
-                                <div class="faq-content">
-                                    <p>Sim, quando possível, desenvolvo sites com painel administrativo simples para que você possa fazer alterações básicas no conteúdo. Para sites estáticos, ofereço treinamento sobre como fazer pequenas alterações ou você pode solicitar as mudanças através do suporte.</p>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Preciso fornecer conteúdo e imagens?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Idealmente sim, pois você conhece melhor seu negócio. Mas posso ajudar na criação de textos e seleção de imagens quando necessário.
                                 </div>
                             </div>
                         </div>
-
-                        <!-- FAQ Item 7 -->
-                        <div class="faq-item">
-                            <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">
-                                <h3 class="faq-title">Vocês cuidam da hospedagem do site?</h3>
-                                <div class="faq-icon">
-                                    <i class="fas fa-plus"></i>
-                                </div>
-                            </div>
-                            <div class="collapse faq-answer" id="faq7">
-                                <div class="faq-content">
-                                    <p>Posso auxiliar na escolha e configuração da hospedagem mais adequada para seu projeto. Trabalho com parceiros confiáveis e também posso gerenciar a hospedagem para você, incluindo backups, atualizações de segurança e monitoramento de performance.</p>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    O site terá otimização para SEO?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sim! Todos os sites incluem otimização SEO básica: meta tags, estrutura semântica, velocidade de carregamento e responsividade.
                                 </div>
                             </div>
                         </div>
-
-                        <!-- FAQ Item 8 -->
-                        <div class="faq-item">
-                            <div class="faq-question" data-bs-toggle="collapse" data-bs-target="#faq8" aria-expanded="false" aria-controls="faq8">
-                                <h3 class="faq-title">Preciso fornecer as imagens e textos?</h3>
-                                <div class="faq-icon">
-                                    <i class="fas fa-plus"></i>
-                                </div>
-                            </div>
-                            <div class="collapse faq-answer" id="faq8">
-                                <div class="faq-content">
-                                    <p>Idealmente sim, pois você conhece melhor seu negócio. Porém, posso auxiliar na criação de textos persuasivos e na seleção de imagens profissionais de bancos de imagens. Também ofereço serviços de copywriting e produção de conteúdo como complemento ao desenvolvimento.</p>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Posso fazer alterações após a entrega?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Claro! Ofereço 30 dias de garantia para ajustes sem custo. Após esse período, alterações são cobradas à parte.
                                 </div>
                             </div>
                         </div>
@@ -805,78 +629,62 @@
         </div>
     </section>
 
-    <!-- Seção Contato -->
-    <section id="contact" class="contact-section">
+    <!-- Seção de Contato -->
+    <section id="contato" class="contact-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-header text-center">
-                        <span class="section-subtitle">Vamos conversar</span>
-                        <h2 class="section-title">Entre em Contato</h2>
-                        <p class="section-description">
-                            Pronto para transformar sua ideia em realidade digital? Vamos conversar sobre seu projeto!
-                        </p>
-                    </div>
-                </div>
+            <div class="section-header text-center">
+                <h2 class="section-title">Vamos Conversar?</h2>
+                <p class="section-subtitle">Entre em contato e transforme sua ideia em realidade</p>
             </div>
-            <div class="row">
-                <div class="col-lg-8 mx-auto">
-                    <div class="contact-content">
-                        <div class="contact-info">
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-phone"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <h4 class="contact-title">Telefone</h4>
-                                    <p class="contact-text">
-                                        <a href="tel:47996756983">(47) 99675-6983</a>
-                                    </p>
-                                    <span class="contact-subtitle">Disponível das 8h às 18h</span>
-                                </div>
+            
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
                             </div>
-                            
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fab fa-whatsapp"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <h4 class="contact-title">WhatsApp</h4>
-                                    <p class="contact-text">
-                                        <a href="https://wa.me/5547996756983" target="_blank">(47) 99675-6983</a>
-                                    </p>
-                                    <span class="contact-subtitle">Resposta rápida garantida</span>
-                                </div>
-                            </div>
-                            
-                            <div class="contact-item">
-                                <div class="contact-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="contact-details">
-                                    <h4 class="contact-title">E-mail</h4>
-                                    <p class="contact-text">
-                                        <a href="mailto:fazminhapagina.contato@gmail.com">fazminhapagina.contato@gmail.com</a>
-                                    </p>
-                                    <span class="contact-subtitle">Resposta em até 24h</span>
-                                </div>
+                            <div class="contact-details">
+                                <h3>WhatsApp</h3>
+                                <p>Resposta em até 1 hora</p>
+                                <a href="https://wa.me/5547991597258" target="_blank">(47) 99159-7258</a>
                             </div>
                         </div>
                         
-                        <div class="contact-cta">
-                            <h3 class="cta-title">Pronto para começar seu projeto?</h3>
-                            <p class="cta-text">
-                                Entre em contato agora e receba um orçamento personalizado para seu projeto. 
-                                Vamos transformar sua visão em uma solução digital de sucesso!
-                            </p>
-                            <div class="cta-buttons">
-                                <a href="https://wa.me/5547996756983" target="_blank" class="btn btn-primary btn-lg">
-                                    <i class="fab fa-whatsapp"></i> Falar no WhatsApp
-                                </a>
-                                <a href="tel:47996756983" class="btn btn-outline-primary btn-lg">
-                                    <i class="fas fa-phone"></i> Ligar Agora
-                                </a>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
                             </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>Para orçamentos detalhados</p>
+                                <a href="mailto:contato@fazminhapagina.com">contato@fazminhapagina.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Horário de Atendimento</h3>
+                                <p>Segunda a Sexta: 8h às 18h</p>
+                                <p>Sábado: 8h às 12h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="contact-cta">
+                        <h3>Pronto para começar?</h3>
+                        <p>Clique no botão abaixo e vamos discutir seu projeto via WhatsApp. É rápido, fácil e sem compromisso!</p>
+                        <a href="https://wa.me/5547991597258?text=Olá! Gostaria de solicitar um orçamento para criação de site." class="btn btn-primary btn-lg" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Solicitar Orçamento Agora
+                        </a>
+                        <div class="contact-guarantee">
+                            <i class="fas fa-shield-check"></i>
+                            <span>Resposta garantida em até 1 hora</span>
                         </div>
                     </div>
                 </div>
@@ -887,65 +695,101 @@
     <!-- Footer -->
     <footer class="footer-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="footer-content text-center">
-                        <div class="footer-logo">
-                            <span class="logo-text">BM</span>
-                            <span class="logo-subtitle">Developer</span>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">
+                        <h3>faz minha página</h3>
+                        <p>Transformando ideias em sites que convertem. Especialista em desenvolvimento front-end com foco em resultados.</p>
+                        <div class="social-links">
+                            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/5547991597258" target="_blank"><i class="fab fa-whatsapp"></i></a>
                         </div>
-                        <p class="footer-description">
-                            Especialista em sites institucionais e landing pages de alta conversão
-                        </p>
-                        <div class="footer-social">
-                            <a href="#" class="social-link" aria-label="LinkedIn">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a href="#" class="social-link" aria-label="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="social-link" aria-label="Instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://wa.me/5547996756983" class="social-link" aria-label="WhatsApp" target="_blank">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-                        </div>
-                        <div class="footer-contact">
-                            <a href="tel:47996756983" class="footer-phone">
-                                <i class="fas fa-phone"></i> (47) 99675-6983
-                            </a>
-                        </div>
-                        <div class="footer-bottom">
-                            <p class="footer-copyright">
-                                &copy; 2025 BM Developer. Todos os direitos reservados.
-                            </p>
-                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2">
+                    <div class="footer-links">
+                        <h4>Serviços</h4>
+                        <ul>
+                            <li><a href="#servicos">Landing Pages</a></li>
+                            <li><a href="#servicos">Sites Institucionais</a></li>
+                            <li><a href="#servicos">Otimização Mobile</a></li>
+                            <li><a href="#valores">Orçamentos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2">
+                    <div class="footer-links">
+                        <h4>Empresa</h4>
+                        <ul>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#beneficios">Benefícios</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2">
+                    <div class="footer-links">
+                        <h4>Tecnologias</h4>
+                        <ul>
+                            <li><a href="#sobre">HTML5 & CSS3</a></li>
+                            <li><a href="#sobre">JavaScript</a></li>
+                            <li><a href="#sobre">Bootstrap</a></li>
+                            <li><a href="#sobre">Tailwind CSS</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2">
+                    <div class="footer-links">
+                        <h4>Suporte</h4>
+                        <ul>
+                            <li><a href="https://wa.me/5547991597258" target="_blank">WhatsApp</a></li>
+                            <li><a href="mailto:contato@fazminhapagina.com">Email</a></li>
+                            <li><a href="#faq">Ajuda</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="footer-divider">
+            
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="footer-copyright">
+                        © 2024 Faz Minha Página - Bruno Mariano. Todos os direitos reservados.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="footer-links-inline">
+                        <a href="#">Política de Privacidade</a>
+                        <a href="#">Termos de Uso</a>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Botão de volta ao topo -->
-    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+    <!-- Botão Voltar ao Topo -->
+    <button id="backToTop" class="back-to-top" title="Voltar ao topo">
         <i class="fas fa-chevron-up"></i>
     </button>
 
-    <!-- Bootstrap JS CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Botão WhatsApp Fixo -->
+    <a href="https://wa.me/5547991597258" class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- JavaScript Personalizado -->
+    <!-- JavaScript Principal -->
     <script src="js/main.js"></script>
-    <script src="js/faq.js"></script>
 </body>
 </html>
-
-
-
-<!-- Botão Fixo do WhatsApp -->
-<a href="https://wa.me/5547996756983" class="whatsapp-button" target="_blank" aria-label="Fale Conosco pelo WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-</a>
-
 

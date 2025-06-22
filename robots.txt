@@ -1,0 +1,36 @@
+# Robots.txt para Faz Minha Página
+# https://fazminhapagina.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://fazminhapagina.com/sitemap.xml
+
+# Crawl-delay para bots específicos
+User-agent: Googlebot
+Crawl-delay: 1
+
+User-agent: Bingbot
+Crawl-delay: 1
+
+# Bloquear arquivos desnecessários
+Disallow: /css/
+Disallow: /js/
+Disallow: *.css$
+Disallow: *.js$
+
+# Permitir arquivos importantes para SEO
+Allow: /css/main.css
+Allow: /js/main.js
+
+# Bloquear diretórios administrativos (se existirem)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /backup/
+
+# Informações adicionais
+# Host: fazminhapagina.com
+# Contact: contato@fazminhapagina.com
+

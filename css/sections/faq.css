@@ -1,0 +1,441 @@
+/* ===== FAQ SECTION - FAZ MINHA PÁGINA ===== */
+/* Seção de perguntas frequentes com accordion interativo */
+
+/* ===== CONTAINER PRINCIPAL ===== */
+
+.faq-section {
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efeito de fundo sutil */
+.faq-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 20% 20%, rgba(30, 42, 56, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 107, 0, 0.05) 0%, transparent 50%);
+    z-index: 1;
+}
+
+.faq-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* ===== ACCORDION CUSTOMIZADO ===== */
+
+.accordion {
+    border: none;
+    box-shadow: var(--shadow-lg);
+    border-radius: var(--border-radius-xl);
+    overflow: hidden;
+    background: white;
+}
+
+.accordion-item {
+    border: none;
+    border-bottom: 1px solid rgba(30, 42, 56, 0.1);
+    background: white;
+    transition: var(--transition-all);
+}
+
+.accordion-item:last-child {
+    border-bottom: none;
+}
+
+.accordion-item:hover {
+    background: rgba(255, 107, 0, 0.02);
+}
+
+/* ===== HEADERS DO ACCORDION ===== */
+
+.accordion-header {
+    margin-bottom: 0;
+}
+
+.accordion-button {
+    background: transparent;
+    border: none;
+    padding: 1.5rem 2rem;
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-dark);
+    text-align: left;
+    width: 100%;
+    position: relative;
+    transition: var(--transition-all);
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    background: linear-gradient(135deg, rgba(255, 107, 0, 0.1) 0%, rgba(255, 107, 0, 0.05) 100%);
+    color: var(--accent-color);
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.2);
+    border-color: var(--accent-color);
+}
+
+.accordion-button:hover {
+    background: rgba(255, 107, 0, 0.05);
+    color: var(--accent-color);
+}
+
+/* ===== ÍCONE DO ACCORDION ===== */
+
+.accordion-button::after {
+    content: '\f067'; /* Font Awesome plus icon */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 1rem;
+    color: var(--accent-color);
+    background: none;
+    border: 2px solid var(--accent-color);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-all);
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: '\f068'; /* Font Awesome minus icon */
+    background: var(--accent-color);
+    color: white;
+    transform: rotate(180deg);
+}
+
+.accordion-button:hover::after {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 107, 0, 0.3);
+}
+
+.accordion-button:not(.collapsed):hover::after {
+    transform: scale(1.1) rotate(180deg);
+}
+
+/* ===== CONTEÚDO DO ACCORDION ===== */
+
+.accordion-collapse {
+    border-top: 1px solid rgba(255, 107, 0, 0.2);
+}
+
+.accordion-body {
+    padding: 1.5rem 2rem 2rem;
+    color: var(--text-light);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-relaxed);
+    background: rgba(255, 107, 0, 0.02);
+    position: relative;
+}
+
+/* Efeito de barra lateral */
+.accordion-body::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--accent-color);
+    border-radius: 0 2px 2px 0;
+}
+
+/* ===== ANIMAÇÕES DE ENTRADA ===== */
+
+.accordion-item {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideInUp 0.6s ease forwards;
+}
+
+.accordion-item:nth-child(1) { animation-delay: 0.1s; }
+.accordion-item:nth-child(2) { animation-delay: 0.2s; }
+.accordion-item:nth-child(3) { animation-delay: 0.3s; }
+.accordion-item:nth-child(4) { animation-delay: 0.4s; }
+.accordion-item:nth-child(5) { animation-delay: 0.5s; }
+
+/* ===== EFEITOS ESPECIAIS ===== */
+
+/* Numeração das perguntas */
+.accordion-button::before {
+    content: counter(faq-counter);
+    counter-increment: faq-counter;
+    background: var(--accent-color);
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.accordion {
+    counter-reset: faq-counter;
+}
+
+.accordion-button:not(.collapsed)::before {
+    background: var(--primary-color);
+}
+
+/* Efeito de destaque no item ativo */
+.accordion-item:has(.accordion-button:not(.collapsed)) {
+    box-shadow: 0 5px 20px rgba(255, 107, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+/* Mobile */
+@media (max-width: 767.98px) {
+    .accordion-button {
+        padding: 1.25rem 1.5rem;
+        font-size: var(--font-size-base);
+    }
+    
+    .accordion-button::before {
+        width: 20px;
+        height: 20px;
+        font-size: var(--font-size-xs);
+        margin-right: 0.75rem;
+    }
+    
+    .accordion-button::after {
+        width: 25px;
+        height: 25px;
+        font-size: 0.875rem;
+    }
+    
+    .accordion-body {
+        padding: 1.25rem 1.5rem 1.75rem;
+        font-size: var(--font-size-sm);
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .accordion-button {
+        padding: 1.375rem 1.75rem;
+    }
+    
+    .accordion-body {
+        padding: 1.375rem 1.75rem 1.875rem;
+    }
+}
+
+/* Desktop grande */
+@media (min-width: 1200px) {
+    .accordion-button {
+        padding: 2rem 2.5rem;
+        font-size: var(--font-size-xl);
+    }
+    
+    .accordion-button::before {
+        width: 30px;
+        height: 30px;
+        font-size: var(--font-size-base);
+        margin-right: 1.25rem;
+    }
+    
+    .accordion-button::after {
+        width: 35px;
+        height: 35px;
+        font-size: 1.125rem;
+    }
+    
+    .accordion-body {
+        padding: 2rem 2.5rem 2.5rem;
+        font-size: var(--font-size-lg);
+    }
+}
+
+/* ===== ESTADOS ESPECIAIS ===== */
+
+/* FAQ em destaque */
+.accordion-item.featured {
+    border: 2px solid var(--accent-color);
+    border-radius: var(--border-radius-lg);
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow-accent);
+}
+
+.accordion-item.featured .accordion-button {
+    background: linear-gradient(135deg, rgba(255, 107, 0, 0.1) 0%, rgba(255, 107, 0, 0.05) 100%);
+    color: var(--accent-color);
+}
+
+/* ===== MODO ESCURO (FUTURO) ===== */
+[data-theme="dark"] .faq-section {
+    background: #1a1a1a;
+}
+
+[data-theme="dark"] .accordion {
+    background: #2d2d2d;
+}
+
+[data-theme="dark"] .accordion-item {
+    background: #2d2d2d;
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .accordion-button {
+    color: white;
+}
+
+[data-theme="dark"] .accordion-body {
+    color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* ===== ACESSIBILIDADE ===== */
+
+@media (prefers-reduced-motion: reduce) {
+    .accordion-item {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+    
+    .accordion-button::after {
+        transition: none;
+    }
+    
+    .accordion-button:hover::after {
+        transform: none;
+    }
+    
+    .accordion-button:not(.collapsed):hover::after {
+        transform: rotate(180deg);
+    }
+    
+    .accordion-item:has(.accordion-button:not(.collapsed)) {
+        transform: none;
+    }
+}
+
+/* Alto contraste */
+@media (prefers-contrast: high) {
+    .accordion {
+        border: 2px solid var(--primary-color);
+    }
+    
+    .accordion-item {
+        border-bottom: 2px solid var(--primary-color);
+    }
+    
+    .accordion-button {
+        border: 1px solid transparent;
+    }
+    
+    .accordion-button:focus {
+        border-color: var(--accent-color);
+    }
+    
+    .accordion-button::before {
+        border: 2px solid white;
+    }
+    
+    .accordion-button::after {
+        border-width: 3px;
+    }
+}
+
+/* ===== EFEITOS ADICIONAIS ===== */
+
+/* Indicador de scroll para FAQs longas */
+.faq-scroll-indicator {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 60%;
+    background: rgba(255, 107, 0, 0.2);
+    border-radius: 2px;
+    opacity: 0;
+    transition: var(--transition-all);
+}
+
+.faq-scroll-indicator.visible {
+    opacity: 1;
+}
+
+.faq-scroll-thumb {
+    width: 100%;
+    background: var(--accent-color);
+    border-radius: 2px;
+    transition: var(--transition-all);
+}
+
+/* Efeito de busca/filtro */
+.faq-search {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.faq-search input {
+    width: 100%;
+    padding: 1rem 1.5rem 1rem 3rem;
+    border: 2px solid rgba(30, 42, 56, 0.1);
+    border-radius: var(--border-radius-full);
+    font-size: var(--font-size-base);
+    transition: var(--transition-all);
+}
+
+.faq-search input:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(255, 107, 0, 0.2);
+    outline: none;
+}
+
+.faq-search::before {
+    content: '\f002';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+/* Destaque de texto encontrado */
+.faq-highlight {
+    background: rgba(255, 107, 0, 0.2);
+    padding: 0.125rem 0.25rem;
+    border-radius: var(--border-radius-sm);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Contador de FAQs */
+.faq-counter {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+    font-size: var(--font-size-sm);
+}
+
+.faq-counter .count {
+    color: var(--accent-color);
+    font-weight: var(--font-weight-semibold);
+}
+

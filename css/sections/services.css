@@ -1,0 +1,426 @@
+/* ===== SERVICES SECTION - FAZ MINHA PÁGINA ===== */
+/* Seção de serviços com cards modernos e efeitos visuais */
+
+/* ===== CONTAINER PRINCIPAL ===== */
+
+.services-section {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, #ffffff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efeito de fundo sutil */
+.services-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 25% 25%, rgba(255, 107, 0, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(30, 42, 56, 0.05) 0%, transparent 50%);
+    z-index: 1;
+}
+
+.services-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* ===== CARDS DE SERVIÇOS ===== */
+
+.service-card {
+    background: white;
+    border-radius: var(--border-radius-xl);
+    padding: 2.5rem 2rem;
+    height: 100%;
+    border: 1px solid rgba(30, 42, 56, 0.1);
+    transition: var(--transition-all);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+/* Efeito hover nos cards */
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-2xl);
+    border-color: var(--accent-color);
+}
+
+/* Efeito de brilho no hover */
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 107, 0, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.service-card:hover::before {
+    left: 100%;
+}
+
+/* Card em destaque */
+.service-card.featured {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #2a3a4a 100%);
+    color: white;
+    transform: scale(1.05);
+    border: 2px solid var(--accent-color);
+    box-shadow: var(--shadow-xl);
+}
+
+.service-card.featured:hover {
+    transform: scale(1.08) translateY(-5px);
+}
+
+.service-card.featured h3,
+.service-card.featured p {
+    color: white;
+}
+
+.service-card.featured .service-features li {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Badge do card em destaque */
+.service-badge {
+    position: absolute;
+    top: -1px;
+    right: 2rem;
+    background: var(--accent-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0 0 var(--border-radius-lg) var(--border-radius-lg);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    box-shadow: var(--shadow-md);
+}
+
+/* ===== ÍCONES DOS SERVIÇOS ===== */
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--accent-color) 0%, #ff8533 100%);
+    border-radius: var(--border-radius-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+    transition: var(--transition-transform);
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.service-card.featured .service-icon {
+    background: linear-gradient(135deg, white 0%, var(--accent-color) 100%);
+}
+
+.service-icon i {
+    font-size: 2rem;
+    color: white;
+}
+
+.service-card.featured .service-icon i {
+    color: var(--primary-color);
+}
+
+/* Efeito de pulso no ícone */
+.service-icon::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius-xl);
+    background: inherit;
+    opacity: 0.3;
+    transform: scale(0);
+    animation: pulse-icon 2s infinite;
+}
+
+@keyframes pulse-icon {
+    0% {
+        transform: scale(0);
+        opacity: 0.3;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
+
+/* ===== CONTEÚDO DOS CARDS ===== */
+
+.service-card h3 {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    line-height: var(--line-height-tight);
+}
+
+.service-card p {
+    color: var(--text-light);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: 1.5rem;
+    font-size: var(--font-size-base);
+}
+
+/* ===== LISTA DE CARACTERÍSTICAS ===== */
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-features li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-light);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+}
+
+.service-features li:last-child {
+    margin-bottom: 0;
+}
+
+.service-features i {
+    color: var(--accent-color);
+    font-size: 1rem;
+    flex-shrink: 0;
+    width: 16px;
+    text-align: center;
+}
+
+.service-card.featured .service-features i {
+    color: var(--accent-color);
+}
+
+/* ===== ANIMAÇÕES DE ENTRADA ===== */
+
+.service-card {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideInUp 0.6s ease forwards;
+}
+
+.service-card:nth-child(1) { animation-delay: 0.1s; }
+.service-card:nth-child(2) { animation-delay: 0.2s; }
+.service-card:nth-child(3) { animation-delay: 0.3s; }
+
+@keyframes slideInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+/* Mobile */
+@media (max-width: 767.98px) {
+    .service-card {
+        padding: 2rem 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .service-card.featured {
+        transform: none;
+        margin-bottom: 2rem;
+    }
+    
+    .service-card.featured:hover {
+        transform: translateY(-5px);
+    }
+    
+    .service-icon {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 1rem;
+    }
+    
+    .service-icon i {
+        font-size: 1.75rem;
+    }
+    
+    .service-card h3 {
+        font-size: var(--font-size-xl);
+    }
+    
+    .service-badge {
+        right: 1rem;
+        padding: 0.4rem 0.8rem;
+        font-size: var(--font-size-xs);
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .service-card {
+        padding: 2.25rem 1.75rem;
+    }
+    
+    .service-card.featured {
+        transform: scale(1.02);
+    }
+    
+    .service-card.featured:hover {
+        transform: scale(1.05) translateY(-5px);
+    }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+    .services-section .row {
+        align-items: stretch;
+    }
+    
+    .service-card {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .service-features {
+        margin-top: auto;
+    }
+}
+
+/* Desktop grande */
+@media (min-width: 1200px) {
+    .service-card {
+        padding: 3rem 2.5rem;
+    }
+    
+    .service-icon {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .service-icon i {
+        font-size: 2.25rem;
+    }
+    
+    .service-card h3 {
+        font-size: var(--font-size-3xl);
+    }
+}
+
+/* ===== ESTADOS ESPECIAIS ===== */
+
+/* Modo escuro (futuro) */
+[data-theme="dark"] .services-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+[data-theme="dark"] .service-card {
+    background: #2d2d2d;
+    border-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+[data-theme="dark"] .service-card h3 {
+    color: white;
+}
+
+[data-theme="dark"] .service-card p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* ===== ACESSIBILIDADE ===== */
+
+@media (prefers-reduced-motion: reduce) {
+    .service-card {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+    
+    .service-card:hover {
+        transform: none;
+    }
+    
+    .service-card.featured {
+        transform: none;
+    }
+    
+    .service-card.featured:hover {
+        transform: none;
+    }
+    
+    .service-icon::after {
+        animation: none;
+    }
+    
+    .service-card::before {
+        transition: none;
+    }
+}
+
+/* Alto contraste */
+@media (prefers-contrast: high) {
+    .service-card {
+        border: 2px solid var(--primary-color);
+    }
+    
+    .service-card.featured {
+        border: 3px solid var(--accent-color);
+    }
+    
+    .service-icon {
+        border: 2px solid var(--primary-color);
+    }
+    
+    .service-features i {
+        background: var(--accent-color);
+        color: white;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.75rem;
+    }
+}
+
+/* ===== EFEITOS ADICIONAIS ===== */
+
+/* Partículas flutuantes */
+.services-section::after {
+    content: '';
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(255, 107, 0, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+    z-index: 1;
+}
+
+/* Efeito de ondas no fundo */
+.services-section {
+    background-image: 
+        radial-gradient(ellipse at top, rgba(255, 107, 0, 0.05) 0%, transparent 50%),
+        radial-gradient(ellipse at bottom, rgba(30, 42, 56, 0.05) 0%, transparent 50%);
+}
+
