@@ -132,7 +132,7 @@
     border-radius: var(--border-radius-lg);
     transition: var(--transition-all);
     position: relative;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 /* Efeito hover nos links de navegação */
@@ -156,7 +156,7 @@
 .nav-link:hover,
 .nav-link.active {
     color: var(--accent-color) !important;
-    background: rgba(255, 107, 0, 0.1);
+ 
 }
 
 /* ===== BOTÃO CTA NO HEADER ===== */
